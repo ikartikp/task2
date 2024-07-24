@@ -49,7 +49,6 @@ router.post(
     try {
       let post = await postModel.findone;
       req.file.filename
-      // res.redirect("/")
     } catch (error) {}
   }
 );

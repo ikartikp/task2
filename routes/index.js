@@ -16,6 +16,7 @@ router.get("/login",function (req,res,send) {
 
     router.get("/createpost",function (req,res,send) {
       res.render("createpost",{title:"CREATEPOST"})
+      
       })
 
 module.exports = router;
