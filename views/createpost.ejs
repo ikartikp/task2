@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen w-full bg-black p-10">
+        <!-- <h1 class="text-white text-5xl">HOMEPAGE</h1> -->
+        <%-include("partials/nav")%>
+
+        <form class="h-[40vh] w-[30vw] bg-blue-100 p-10 mx-auto " action="/users/createpost" method="post" enctype="multipart/form-data">
+            <h1 class="text-5xl  mb-20 text-center ">Create Post</h1>
+            <input type="file" name="postimage" class="postinput  mb-8 ">
+            <input class=" border px-2 py-1 bg-transparent block mb-8 w-full rounded outline-none
+            border-zinc-400 font-bold" type="text" name="postcaption" placeholder="Share your status here...">
+            <button class="bg-blue-300 px-4 py-1 rounded text-white mx-auto block hover:bg-blue-400 ">SIGN
+                UP</button>
+        </form>
+    </div>
+</body>

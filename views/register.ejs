@@ -1,0 +1,16 @@
+<%-include("partials/header")%>
+<%-include("partials/nav")%>
+    <div class="h-[60vh] w-[50vw] bg-blue-200 flex justify-center item-center ml-[380px] mt-[100px]" >
+      <form action="/users/register" method="post"  class="mt-[40px]"> 
+        <h1 class="text-4xl text-bold mb-[40px] ml-[25px]">REGISTER PAGE</h1>
+        <div class="avatarOut h-[100px] w-[100px] bg-white rounded-full ml-[100px] overflow-hidden"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4lTwq_Cb_AwEquAa0B6WNOZCpeZvSiVQq8j7xqw8mJcy-9I4YuIX2lQCPg5w2qaaa42A&usqp=CAU" alt=""></div>
+        
+        <input type="text" placeholder="enter your username"  class="px-[30px] py-[5px] ml-[20px] mt-[20px] border-[1px] border-black bg-blue-100 font-black" name="username" ><br>
+        <input type="email" placeholder="enter your email"  class="px-[30px] py-[5px] ml-[20px] mt-[20px] border-[1px] border-black bg-blue-100 font-black" name="email" ><br>
+       <input type="password" placeholder="enter your password"  class="px-[30px] py-[5px] ml-[20px] mt-[20px] border-[1px] border-black bg-blue-100 font-black" name="password" ><br>
+        <button class="px-[20px] py-[5px] bg-blue-300 rounded mt-[50px] ml-[110px]">submit</button>
+        <h1></h1>
+      </form>
+    </div>
+ 
+<%-include("partials/footer")%>
